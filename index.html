@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iCoffee</title>
+	</head>
+	<body>
+		<button onclick="addLove()">Love<button>
+		<button onclick="addHate()">Hate</button>
+		<div id="result"></div>
+		
+		<script>
+			function addLove() {
+				var target = document.getElementById("result")
+				target.innerHTML += "Love<br>"
+			}	
+			function addHate() {
+				var target = document.getElementById("result")
+				target.innerHTML += "Hate<br>"
+			}	
+		</script>			
+	</body>
+
+
+</html>

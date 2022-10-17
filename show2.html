@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iCoffee</title>
+	</head>
+	<body>
+		<input id="task">
+		<button onclick="add()">Add</button>
+		<div id="report"></div>
+		
+		<script>
+			function add(){
+				var task = document.getElementById("task")
+				var report = document.getElementById("report")
+				report.innerHTML = report.innerHTML + task.value + "<br>"
+				task.value = ""
+			}	
+		</script>	
+	</body>	
+</html>

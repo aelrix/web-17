@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>iCoffee</title>
+	</head>
+	<body>
+		<input id="price">
+		<button onclick="show()">Show</button>
+		<div id="result">...</div>
+		<script>
+			function show() {
+				var p = document.getElementById("price")
+				var price = +p.value || 0
+				price = price * 1.08
+				var target = document.getElementById("result")
+				target.innerText = "Total is " + price.toFixed(2)
+			}
+				
+		</script>	
+	</body>	
+</html>
